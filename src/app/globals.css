@@ -33,3 +33,11 @@ body {
 .bg-accent {
   background: rgb(var(--accent-color));
 }
+
+.bg-secondary {
+  background: rgb(var(--secondary-color));
+}
+
+.bg-primary {
+  background: rgb(var(--primary-color));
+}
