@@ -3,31 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-color: 44, 62, 80;
+  --secondary-color: 149, 165, 166;
+  --accent-color: 230, 125, 34;
+  --background-color: 255, 255, 255;
+  --text-color: 0, 0, 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--text-color));
+  background: rgb(var(--background-color));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.navbar {
+  background: rgb(var(--primary-color));
+  color: rgb(var(--background-color));
+}
+
+.text-accent {
+  color: rgb(var(--accent-color));
+}
+
+.bg-accent {
+  background: rgb(var(--accent-color));
 }

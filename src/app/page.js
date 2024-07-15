@@ -2,111 +2,97 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="./vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="p-24">
+        <h3 className="text-2xl"><span className="font-bold">Haikal is a</span> <span className="text-accent font-bold">Web Developer</span>.</h3>
+        <br /> Experienced in building websites and web applications. 
+        <br /> Passionate about web development and loves to learn new things.
+      </div>
+      <div className="navbar sticky top-0 p-3">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="hidden md:flex space-x-4 mx-auto text-xl">
+                <a href="#my-project" className="text-sm">My Projects</a>
+                <a href="#my-skill" className="text-sm">My Skills</a>
+                <a href="#my-contact" className="text-sm">Contact Me</a>
+            </div>
         </div>
       </div>
+      <div className="px-6 py-6 lg:px-24 lg:py-12" id="my-project">
+        <h3 className="text-3xl">My Projects</h3>
+        <div class="max-w-screen mt-4">
+          <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+            <div class="bg-white shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/400" alt="Card Image" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 1</h2>
+                    <p class="text-gray-600">This is a description for the first card. It provides some details about the content of the card.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-500 hover:underline">Read more</a>
+                </div>
+            </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="./next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            <div class="bg-white shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/400" alt="Card Image" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 2</h2>
+                    <p class="text-gray-600">This is a description for the second card. It provides some details about the content of the card.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-500 hover:underline">Read more</a>
+                </div>
+            </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div class="bg-white shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/400" alt="Card Image" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 3</h2>
+                    <p class="text-gray-600">This is a description for the third card. It provides some details about the content of the card.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-500 hover:underline">Read more</a>
+                </div>
+            </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <div class="bg-white shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/400" alt="Card Image" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 3</h2>
+                    <p class="text-gray-600">This is a description for the third card. It provides some details about the content of the card.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-500 hover:underline">Read more</a>
+                </div>
+            </div>
+            
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className="py-12" id="my-skill">
+          <h3 className="text-3xl">My Skills</h3>
+          <div className="mt-4">
+            {/* list of skills icon */}
+            <div className="flex justify-between items-center">
+              <div className="flex items-center space-x-4">
+                <img src="https://camo.githubusercontent.com/2cb3af33f9a02e40c34a1a4e0c6d1309b4439faa6754212da968fcfc56afcb04/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6a732c68746d6c2c6373732c7461696c77696e642c626f6f7473747261702c6e6f64656a732c72656163742c6e6578746a732c7376656c74652c6d7973716c2c7068702c6c61726176656c2c666c75747465722c646f636b65722c706f73746d616e" alt="HTML5" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-24" id="my-contact">
+          <h3 className="text-3xl">Contact Me</h3>
+          <form action="mailto:haikalg2003@gmail.com" method="post" enctype="text/plain" className="p-12">
+              <div class="mb-4">
+                  <label for="name" class="block text-sm font-semibold mb-2">Nama</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full px-2 py-1 border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div class="mb-4">
+                  <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full px-2 py-1 border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div class="mb-4">
+                  <label for="message" class="block text-sm font-semibold mb-2">Pesan</label>
+                  <textarea id="message" name="message" placeholder="Your Message" rows="4" required class="w-full px-2 py-1 border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="w-full py-2 px-4 bg-accent text-white font-semibold shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  Kirim pesan
+              </button>
+          </form>
+        </div>
       </div>
     </main>
   );
