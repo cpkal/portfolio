@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: 44, 62, 80;
   --secondary-color: 149, 165, 166;
@@ -40,4 +44,24 @@ body {
 
 .bg-primary {
   background: rgb(var(--primary-color));
+}
+
+.btn-carousel {
+  background: rgb(var(--accent-color));
+  color: rgb(var(--background-color));
+  padding: 5px;
+}
+
+.btn-carousel:hover {
+  background: rgb(var(--primary-color));
+}
+
+input::placeholder{
+  font-size: 10px;
+  padding: 10px;
+}
+
+textarea::placeholder{
+  font-size: 10px;
+  padding: 10px;
 }
