@@ -1,6 +1,6 @@
 export function SkillSection() {
 	return (
-		<div className="px-6 py-6 lg:px-24 lg:py-20 bg-primary text-white" id="my-skill">
+		<div className="px-6 py-10 lg:px-24 lg:py-10 bg-secondary text-white" id="my-skill">
 			<h3 className="text-2xl font-bold">My Skills</h3>
 			<div className="mt-4">
 				{/* list of skills icon */}
