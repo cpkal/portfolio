@@ -12,8 +12,6 @@ export default function Home() {
     <main>
       <div className="p-16 lg:p-36">
         <h3 className="mb-2 text-3xl lg:text-6xl"><span className="font-bold">Haikal Putra Gustiansyah</span>  </h3>
-
-        
         <Typewriter
           options={{
             strings: ['Fullstack Developer', 'Flutter Developer', 'Competitive Programmer'],

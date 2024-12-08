@@ -15,7 +15,7 @@ export function SkillSection() {
 						{skillList.map((skill, index) => (
 							<div key={index} className="flex flex-col items-center justify-between mt-6 lg:mt-0">
 								<Image src={skill.skill_url} alt={skill.skill_name} width={100} height={100} />
-								<p className="mt-2">{skill.skill_name}</p>
+								{/* <p className="mt-2">{skill.skill_name}</p> */}
 							</div>
 							)
 						)}
